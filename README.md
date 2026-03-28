@@ -1,74 +1,140 @@
-# ai-policy-analysis
-AI-assisted policy analysis using data science techniques
+# 🏛️ PolicyAI Studio
 
-📖 Overview
+An AI-powered policy analysis platform that summarizes complex policy documents and generates intelligent policy recommendations using NLP and Generative AI.
 
-PolicyAI Studio is an AI-powered web application designed to support policy analysis using Natural Language Processing (NLP) and Generative AI.
 
-The system analyzes real-world government policy documents and provides:
 
-Concise summaries using NLP techniques
-AI-generated policy drafts for different scenarios
-A combination of extractive and abstractive summarization
+## 🚀 Features
 
-This project demonstrates how AI can enhance policy understanding, evaluation, and decision-making.
+* 📄 **Policy Summarization**
 
-🎯 Key Features
+  * Extractive summarization using NLP
+  * Abstractive summarization using AI for human-like insights
 
-📄 Policy Summarization
-Extractive summarization using NLP techniques
-Abstractive summarization using AI models
+* 🤖 **AI Policy Generator**
 
-🤖 Policy Generation
-Generates scenario-based policy drafts using Generative AI
+  * Generates policy recommendations based on user-defined scenarios
 
-🔍 Real-World Application
-Uses National Digital Economy Strategy 2030 (Sri Lanka) as the case study
+* 🧠 **NLP-Powered Analysis**
 
-⚙️ Technologies Used
-Python
-Flask (for web application)
-SpaCy (NLP processing)
-Generative AI (Groq API)
-Environment Variables (.env)
+  * Identifies key sentences and important policy content
 
-Supporting modules:
-summariser.py
-generator.py
-utils.py
+* 📊 **Insight Extraction**
 
-Project Structure
+  * Helps understand large policy documents quickly and effectively
 
+* ⚡ **Real-World Use Case**
+
+  * Based on *National Digital Economy Strategy 2030 – Sri Lanka*
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer       | Technology                                    |
+| ----------- | --------------------------------------------- |
+| Backend     | Python, Flask                                 |
+| AI/NLP      | SpaCy, Generative AI (Groq API)               |
+| Processing  | Custom NLP Summarization                      |
+| Frontend    | HTML, CSS, JavaScript                         |
+| Environment | Python-dotenv                                 |
+
+
+---
+
+## 📁 Project Structure
+
+```
+policyai-studio/
 ├── app.py                # Main Flask application
-
 ├── summariser.py         # Extractive summarization logic
-
-├── generator.py          # AI-based policy generation
-
+├── generator.py          # AI policy generation module
 ├── utils.py              # Helper functions
-
-├── policy.pdf            # Source policy document
-
+├── policy.pdf            # Input policy document
 ├── requirements.txt      # Dependencies
+├── .env                  # Environment variables (API keys)
+└── README.md             # Project documentation
+```
 
-├── README_POLICY.md      # Original documentation
+---
 
-🔄 Methodology
-Input Policy Document
-A real government policy document is used
+## ⚙️ How It Works
 
-Extractive Summarization
-Key sentences are extracted using NLP
+1. **Policy Input**
 
-Abstractive Summarization
-AI generates a refined, human-like summary
+   * A real-world policy document is provided as input
 
-Policy Generation
-AI creates scenario-based policy recommendations
+2. **Text Processing (NLP)**
 
-Key Insights
-AI can significantly improve the efficiency of policy analysis
-Combining extractive + abstractive methods produces better summaries
-Generative AI enables adaptive and scenario-based policymaking
+   * SpaCy processes and cleans the text
 
-Uses National Digital Economy Strategy 2030 (Sri Lanka) as the case study
+3. **Extractive Summarization**
+
+   * Key sentences are selected based on importance
+
+4. **Abstractive Summarization**
+
+   * AI generates a refined, human-like summary
+
+5. **Policy Generation**
+
+   * AI produces new policy ideas based on given scenarios
+
+---
+
+## 🔧 Run Locally
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/policyai-studio.git
+cd policyai-studio
+
+# Create virtual environment
+python -m venv venv
+venv\Scripts\activate  # Windows
+source venv/bin/activate  # Mac/Linux
+
+# Install dependencies
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+
+# Create .env file
+GROQ_API_KEY=your_api_key_here
+
+# Run the app
+python app.py
+```
+
+---
+
+## 📊 Core Functionalities
+
+| Feature        | Description                                 |
+| -------------- | ------------------------------------------- |
+| Summarization  | Extracts key insights from policy documents |
+| AI Generation  | Produces scenario-based policy drafts       |
+| NLP Processing | Cleans and analyzes policy text             |
+
+---
+
+## 🧠 Key Insight
+
+* AI can significantly reduce the complexity of policy analysis
+* Combining extractive and abstractive methods improves understanding
+* Generative AI enables smarter, faster policymaking
+
+## 👩‍💻 Author
+
+**Thesanya Lamahewa**
+
+* GitHub: [@ThesanyaLamahewa](https://github.com/ThesanyaLamahewa)
+
+
+
+## 📄 License
+
+This project is open source and available under the **MIT License**.
+
+
+
+* Or help you **deploy it like your outbreak project** 🚀
